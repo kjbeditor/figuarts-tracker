@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Figuarts Tracker</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0c0a14;
+    --panel:#15121f;
+    --panel-2:#1d1830;
+    --edge:#2c2640;
+    --text:#ece8f5;
+    --muted:#9a92b5;
+    --accent:#ff2e63;       /* hot manga red-pink */
+    --accent-2:#08d9d6;     /* cyan */
+    --gold:#ffd23f;
+    --green:#3ddc84;
+    --amber:#ffa53f;
+    --grey:#6b6480;
+    --radius:14px;
+    --shadow:0 18px 40px -18px rgba(0,0,0,.8);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:
+      radial-gradient(1200px 600px at 80% -10%, rgba(255,46,99,.12), transparent 60%),
+      radial-gradient(1000px 500px at 0% 0%, rgba(8,217,214,.10), transparent 55%),
+      var(--ink);
+    color:var(--text);
+    font-family:"Space Grotesk",system-ui,sans-serif;
+    min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.025'/%3E%3C/svg%3E");
+  }
+  .wrap{position:relative;z-index:1;max-width:1240px;margin:0 auto;padding:0 20px 80px}
+
+  /* Header */
+  header{padding:34px 0 22px;display:flex;flex-direction:column;gap:6px}
+  .logo{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  .logo h1{
+    font-family:"Bebas Neue",sans-serif;font-size:clamp(38px,7vw,68px);
+    letter-spacing:2px;line-height:.9;
+    background:linear-gradient(92deg,var(--accent),var(--gold) 60%,var(--accent-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .logo .tag{font-family:"DM Mono",monospace;font-size:12px;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+  .sub{color:var(--muted);font-size:15px;max-width:620px}
+  .meta-row{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-family:"DM Mono",monospace;font-size:11px;color:var(--grey);letter-spacing:.5px}
+  .meta-row b{color:var(--accent-2);font-weight:500}
+
+  /* Controls */
+  .controls{position:sticky;top:0;z-index:20;padding:16px 0;margin-bottom:8px;
+    background:linear-gradient(var(--ink) 70%,transparent);
+    display:flex;flex-direction:column;gap:14px}
+  .searchbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .search{flex:1;min-width:220px;position:relative}
+  .search input{
+    width:100%;padding:13px 16px 13px 44px;border-radius:var(--radius);
+    background:var(--panel);border:1px solid var(--edge);color:var(--text);
+    font-family:"Space Grotesk";font-size:15px;outline:none;transition:.2s;
+  }
+  .search input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,46,99,.15)}
+  .search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);opacity:.5}
+  .view-toggle{display:flex;background:var(--panel);border:1px solid var(--edge);border-radius:var(--radius);overflow:hidden}
+  .view-toggle button{background:none;border:none;color:var(--muted);padding:12px 16px;cursor:pointer;font-family:"DM Mono",monospace;font-size:12px;letter-spacing:1px;transition:.2s}
+  .view-toggle button.on{background:var(--accent);color:#fff}
+
+  .franchises{display:flex;gap:8px;flex-wrap:wrap}
+  .chip{
+    background:var(--panel);border:1px solid var(--edge);color:var(--muted);
+    padding:9px 15px;border-radius:999px;cursor:pointer;font-size:13px;font-weight:600;
+    transition:.18s;white-space:nowrap;display:flex;align-items:center;gap:7px;
+  }
+  .chip .n{font-family:"DM Mono",monospace;font-size:11px;opacity:.7}
+  .chip:hover{border-color:var(--accent-2);color:var(--text)}
+  .chip.on{background:linear-gradient(92deg,var(--accent),#ff5c84);color:#fff;border-color:transparent}
+  .chip.wish.on{background:linear-gradient(92deg,var(--gold),#ffba08);color:#241a00}
+
+  .statuses{display:flex;gap:7px;flex-wrap:wrap}
+  .sfilter{
+    background:transparent;border:1px solid var(--edge);color:var(--muted);
+    padding:7px 13px;border-radius:8px;cursor:pointer;font-size:12px;font-family:"DM Mono",monospace;
+    letter-spacing:.5px;transition:.15s;display:flex;align-items:center;gap:7px
+  }
+  .sfilter .dot{width:8px;height:8px;border-radius:50%}
+  .sfilter.on{color:var(--text);border-color:currentColor}
+  .sfilter.on[data-s=preorder]{background:rgba(255,210,63,.12);border-color:var(--gold);color:var(--gold)}
+  .sfilter.on[data-s=upcoming]{background:rgba(8,217,214,.12);border-color:var(--accent-2);color:var(--accent-2)}
+  .sfilter.on[data-s=available]{background:rgba(61,220,132,.12);border-color:var(--green);color:var(--green)}
+  .sfilter.on[data-s=soldout]{background:rgba(255,46,99,.12);border-color:var(--accent);color:var(--accent)}
+
+  /* Grid */
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));margin-top:18px}
+  .grid.list{grid-template-columns:1fr;gap:10px}
+
+  .card{
+    background:linear-gradient(180deg,var(--panel-2),var(--panel));
+    border:1px solid var(--edge);border-radius:var(--radius);overflow:hidden;
+    display:flex;flex-direction:column;position:relative;transition:.2s;animation:rise .4s both;
+  }
+  @keyframes rise{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+  .card:hover{transform:translateY(-4px);border-color:var(--accent-2);box-shadow:var(--shadow)}
+  .thumb{aspect-ratio:1;background:var(--ink);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+  .thumb img{width:100%;height:100%;object-fit:cover}
+  .thumb .noimg{font-family:"Bebas Neue";font-size:42px;color:var(--edge);letter-spacing:2px}
+  .status-tag{
+    position:absolute;top:10px;left:10px;font-family:"DM Mono",monospace;font-size:10px;
+    letter-spacing:1px;text-transform:uppercase;padding:5px 9px;border-radius:6px;font-weight:500;backdrop-filter:blur(4px)
+  }
+  .status-tag.preorder{background:rgba(255,210,63,.92);color:#3a2c00}
+  .status-tag.upcoming{background:rgba(8,217,214,.92);color:#003c3b}
+  .status-tag.available{background:rgba(61,220,132,.92);color:#00351a}
+  .status-tag.soldout{background:rgba(255,46,99,.92);color:#fff}
+  .heart{
+    position:absolute;top:8px;right:8px;width:34px;height:34px;border-radius:50%;
+    background:rgba(12,10,20,.6);backdrop-filter:blur(4px);border:none;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;transition:.15s;z-index:2
+  }
+  .heart:hover{background:rgba(12,10,20,.85);transform:scale(1.1)}
+  .heart svg{width:18px;height:18px;fill:none;stroke:var(--muted);stroke-width:2;transition:.15s}
+  .heart.on svg{fill:var(--gold);stroke:var(--gold)}
+  .card-body{padding:13px 14px 15px;display:flex;flex-direction:column;gap:9px;flex:1}
+  .card-name{font-size:14px;font-weight:600;line-height:1.3}
+  .card-meta{display:flex;justify-content:space-between;align-items:flex-end;margin-top:auto;gap:8px}
+  .price{font-family:"DM Mono",monospace}
+  .price .usd{font-size:16px;font-weight:500;color:var(--text)}
+  .price .jpy{font-size:11px;color:var(--grey)}
+  .rel{font-family:"DM Mono",monospace;font-size:11px;color:var(--muted);text-align:right}
+  .rel b{color:var(--accent-2);font-weight:500;display:block;font-size:12px}
+  .buy{
+    margin-top:4px;display:block;text-align:center;text-decoration:none;
+    background:var(--ink);border:1px solid var(--edge);color:var(--text);
+    padding:9px;border-radius:9px;font-size:12px;font-family:"DM Mono",monospace;letter-spacing:.5px;transition:.15s
+  }
+  .buy:hover{border-color:var(--accent);color:var(--accent)}
+
+  /* list layout tweaks */
+  .grid.list .card{flex-direction:row;align-items:stretch}
+  .grid.list .thumb{width:90px;aspect-ratio:1;flex-shrink:0}
+  .grid.list .thumb .noimg{font-size:24px}
+  .grid.list .status-tag{font-size:8px;padding:3px 6px;top:6px;left:6px}
+  .grid.list .heart{display:none}
+  .grid.list .card-body{padding:11px 14px;flex-direction:row;align-items:center;gap:18px}
+  .grid.list .card-name{flex:1}
+  .grid.list .card-meta{margin:0;flex-direction:row;gap:24px;align-items:center}
+  .grid.list .buy{margin:0;padding:8px 16px}
+
+  .empty{text-align:center;padding:80px 20px;color:var(--muted)}
+  .empty .big{font-family:"Bebas Neue";font-size:40px;color:var(--edge);letter-spacing:2px}
+
+  footer{margin-top:50px;padding-top:24px;border-top:1px solid var(--edge);color:var(--grey);font-size:12px;line-height:1.7}
+  footer a{color:var(--accent-2);text-decoration:none}
+  .note{font-family:"DM Mono",monospace;font-size:11px;margin-top:6px}
+
+  @media(max-width:560px){
+    .grid.list .card-body{flex-direction:column;align-items:flex-start;gap:8px}
+    .grid.list .card-meta{flex-direction:column;align-items:flex-start;gap:4px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">
+      <h1>Figuarts Tracker</h1>
+      <span class="tag">S.H.Figuarts · release radar</span>
+    </div>
+    <p class="sub">Browse every S.H.Figuarts figure across your favorite series, see what's on pre-order, what's coming, and what's already gone — and star the ones you want.</p>
+    <div class="meta-row">
+      <span>last updated <b id="updated">—</b></span>
+      <span><b id="totalcount">—</b> figures tracked</span>
+      <span>prices approx · <b>¥→$</b> <span id="fxrate"></span></span>
+    </div>
+  </header>
+
+  <div class="controls">
+    <div class="searchbar">
+      <div class="search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+        <input id="search" type="text" placeholder="Search by character or figure name…">
+      </div>
+      <div class="view-toggle">
+        <button id="viewGrid" class="on">GRID</button>
+        <button id="viewList">LIST</button>
+      </div>
+    </div>
+    <div class="franchises" id="franchises"></div>
+    <div class="statuses" id="statuses"></div>
+  </div>
+
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    <div>Data aggregated from AmiAmi. Prices are reference figures in Japanese yen converted to an approximate USD value and exclude shipping and any import duties. Release dates are Japan dates; US availability may lag. Always confirm on the retailer page before buying.</div>
+    <div class="note">Your wishlist (★) is saved in this browser only. Built for personal use.</div>
+  </footer>
+</div>
+
+<script>
+const FX = 0.0067; // approximate JPY->USD; updated by script if available
+const STATUS_LABEL = {preorder:"Pre-Order", upcoming:"Upcoming", available:"In Stock", soldout:"Sold Out"};
+const STATUS_ORDER = ["preorder","upcoming","available","soldout"];
+const STATUS_COLOR = {preorder:"var(--gold)", upcoming:"var(--accent-2)", available:"var(--green)", soldout:"var(--accent)"};
+
+let DATA = {figures:[], franchises:[]};
+let activeFranchise = "all";
+let activeStatuses = new Set(STATUS_ORDER);
+let showWishOnly = false;
+let view = "grid";
+let wishlist = new Set(JSON.parse(localStorage.getItem("figuarts_wishlist")||"[]"));
+
+function saveWish(){ localStorage.setItem("figuarts_wishlist", JSON.stringify([...wishlist])); }
+
+function usd(jpy){ if(!jpy) return "—"; return "$"+Math.round(jpy*FX); }
+
+function relLabel(d){
+  if(!d) return {top:"", date:"TBA"};
+  const parts = d.split("-");
+  const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  if(parts.length>=2){
+    const m = months[parseInt(parts[1])-1]||"";
+    return {top:"Release", date:`${m} ${parts[0]}`};
+  }
+  return {top:"Release", date:d};
+}
+
+function fcount(fid){
+  let list = DATA.figures;
+  if(fid!=="all" && fid!=="wish") list = list.filter(f=>f.franchise===fid);
+  if(fid==="wish") list = list.filter(f=>wishlist.has(f.id));
+  return list.length;
+}
+
+function renderFranchises(){
+  const el = document.getElementById("franchises");
+  let html = `<button class="chip ${activeFranchise==='all'&&!showWishOnly?'on':''}" data-f="all">All Series <span class="n">${DATA.figures.length}</span></button>`;
+  DATA.franchises.forEach(f=>{
+    html += `<button class="chip ${activeFranchise===f.id&&!showWishOnly?'on':''}" data-f="${f.id}">${f.name} <span class="n">${fcount(f.id)}</span></button>`;
+  });
+  html += `<button class="chip wish ${showWishOnly?'on':''}" data-f="wish">★ Wishlist <span class="n">${wishlist.size}</span></button>`;
+  el.innerHTML = html;
+  el.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
+    const f=c.dataset.f;
+    if(f==="wish"){ showWishOnly=!showWishOnly; }
+    else { activeFranchise=f; showWishOnly=false; }
+    renderFranchises(); render();
+  });
+}
+
+function renderStatuses(){
+  const el = document.getElementById("statuses");
+  el.innerHTML = STATUS_ORDER.map(s=>
+    `<button class="sfilter ${activeStatuses.has(s)?'on':''}" data-s="${s}">
+       <span class="dot" style="background:${STATUS_COLOR[s]}"></span>${STATUS_LABEL[s]}
+     </button>`).join("");
+  el.querySelectorAll(".sfilter").forEach(b=>b.onclick=()=>{
+    const s=b.dataset.s;
+    if(activeStatuses.has(s)) activeStatuses.delete(s); else activeStatuses.add(s);
+    if(activeStatuses.size===0) activeStatuses=new Set(STATUS_ORDER); // never empty
+    renderStatuses(); render();
+  });
+}
+
+function render(){
+  const q = document.getElementById("search").value.trim().toLowerCase();
+  let list = DATA.figures.slice();
+
+  if(showWishOnly) list = list.filter(f=>wishlist.has(f.id));
+  else if(activeFranchise!=="all") list = list.filter(f=>f.franchise===activeFranchise);
+
+  list = list.filter(f=>activeStatuses.has(f.status));
+  if(q) list = list.filter(f=>f.name.toLowerCase().includes(q));
+
+  // sort: preorder & upcoming first (by soonest date), then available, then soldout
+  const rank={preorder:0,upcoming:1,available:2,soldout:3};
+  list.sort((a,b)=>{
+    if(rank[a.status]!==rank[b.status]) return rank[a.status]-rank[b.status];
+    return (a.release_date||"").localeCompare(b.release_date||"");
+  });
+
+  const grid = document.getElementById("grid");
+  grid.className = "grid"+(view==="list"?" list":"");
+
+  if(list.length===0){
+    grid.innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">No figures found</div><p>Try a different series, status, or search term.</p></div>`;
+    return;
+  }
+
+  const fmap = Object.fromEntries(DATA.franchises.map(f=>[f.id,f.name]));
+  grid.innerHTML = list.map((f,i)=>{
+    const rel = relLabel(f.release_date);
+    const wished = wishlist.has(f.id);
+    const initials = (fmap[f.franchise]||"?").split(" ").map(w=>w[0]).join("").slice(0,3).toUpperCase();
+    return `<div class="card" style="animation-delay:${Math.min(i*25,400)}ms">
+      <div class="thumb">
+        ${f.image?`<img src="${f.image}" alt="" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">`:""}
+        <span class="noimg" style="${f.image?'display:none':'display:flex'}">${initials}</span>
+        <span class="status-tag ${f.status}">${STATUS_LABEL[f.status]}</span>
+        <button class="heart ${wished?'on':''}" data-id="${f.id}" title="Add to wishlist">
+          <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.3C.5 8.5 2 5 5.3 5c2 0 3.3 1.2 4.2 2.4C10.4 6.2 11.7 5 13.7 5 17 5 18.5 8.5 22 11.7 19.5 16.4 12 21 12 21z"/></svg>
+        </button>
+      </div>
+      <div class="card-body">
+        <div class="card-name">${f.name.replace(/^S\.H\.Figuarts\s*/i,"")}</div>
+        <div class="card-meta">
+          <span class="price"><span class="usd">${usd(f.price_jpy)}</span> <span class="jpy">¥${(f.price_jpy||0).toLocaleString()}</span></span>
+          <span class="rel">${rel.top}<b>${rel.date}</b></span>
+        </div>
+        ${f.url?`<a class="buy" href="${f.url}" target="_blank" rel="noopener">View on AmiAmi →</a>`:""}
+      </div>
+    </div>`;
+  }).join("");
+
+  grid.querySelectorAll(".heart").forEach(h=>h.onclick=(e)=>{
+    e.preventDefault();
+    const id=h.dataset.id;
+    if(wishlist.has(id)) wishlist.delete(id); else wishlist.add(id);
+    h.classList.toggle("on");
+    saveWish(); renderFranchises();
+    if(showWishOnly) render();
+  });
+}
+
+document.getElementById("search").oninput = render;
+document.getElementById("viewGrid").onclick = function(){view="grid";this.classList.add("on");document.getElementById("viewList").classList.remove("on");render();};
+document.getElementById("viewList").onclick = function(){view="list";this.classList.add("on");document.getElementById("viewGrid").classList.remove("on");render();};
+
+fetch("data.json?t="+Date.now())
+  .then(r=>r.json())
+  .then(d=>{
+    DATA = d;
+    document.getElementById("updated").textContent = (d.generated||"").slice(0,10) || "—";
+    document.getElementById("totalcount").textContent = d.figures.length;
+    document.getElementById("fxrate").textContent = "~"+FX;
+    renderFranchises(); renderStatuses(); render();
+  })
+  .catch(e=>{
+    document.getElementById("grid").innerHTML = `<div class="empty" style="grid-column:1/-1"><div class="big">Couldn't load data</div><p>data.json is missing or unreadable. If you just set this up, make sure data.json is in the same folder as index.html.</p></div>`;
+  });
+</script>
+</body>
+</html>
