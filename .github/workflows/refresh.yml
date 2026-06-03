@@ -1,0 +1,38 @@
+name: Refresh figure data
+
+# Runs the fetch script and commits the updated data.json back to the repo.
+# GitHub Actions has open internet access, so it can reach AmiAmi's API.
+on:
+  schedule:
+    - cron: "0 9 * * *"   # every day at 09:00 UTC (~4-5am US Eastern)
+  workflow_dispatch: {}    # also lets you trigger it manually from the Actions tab
+
+permissions:
+  contents: write          # allow the action to commit the refreshed data.json
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch latest figure data
+        run: python fetch_figures.py
+
+      - name: Commit updated data if it changed
+        run: |
+          git config user.name  "figure-bot"
+          git config user.email "actions@github.com"
+          git add data.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Auto-update figure data ($(date -u +%Y-%m-%d))"
+            git push
+          fi
