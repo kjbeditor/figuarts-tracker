@@ -29,16 +29,41 @@ from datetime import datetime, timezone
 API_BASE = "https://api.amiami.com/api/v1.0"
 USER_KEY = "amiami_dev"
 
-# Franchises to track. The "query" is what we send to AmiAmi search.
-# "id" is a stable slug used by the web app. Order controls display order.
+# Franchises to track. "id" is a stable slug used by the web app.
+# Order controls display order.
 FRANCHISES = [
-    {"id": "jojo",  "name": "JoJo's Bizarre Adventure", "query": "S.H.Figuarts JoJo"},
-    {"id": "onepiece", "name": "One Piece",             "query": "S.H.Figuarts One Piece"},
-    {"id": "bleach", "name": "Bleach",                  "query": "S.H.Figuarts Bleach"},
-    {"id": "jjk",   "name": "Jujutsu Kaisen",           "query": "S.H.Figuarts Jujutsu Kaisen"},
-    {"id": "mha",   "name": "My Hero Academia",         "query": "S.H.Figuarts My Hero Academia"},
-    {"id": "csm",   "name": "Chainsaw Man",             "query": "S.H.Figuarts Chainsaw Man"},
+    {"id": "jojo",     "name": "JoJo's Bizarre Adventure", "search": "JoJo"},
+    {"id": "onepiece", "name": "One Piece",                "search": "One Piece"},
+    {"id": "bleach",   "name": "Bleach",                   "search": "Bleach"},
+    {"id": "jjk",      "name": "Jujutsu Kaisen",           "search": "Jujutsu Kaisen"},
+    {"id": "mha",      "name": "My Hero Academia",         "search": "My Hero Academia"},
+    {"id": "csm",      "name": "Chainsaw Man",             "search": "Chainsaw Man"},
 ]
+
+# Brands to track. For each brand we run one search per franchise.
+# "match" is the list of lowercase substrings that confirm an item is this brand
+# (AmiAmi search is fuzzy, so we filter the results by product name).
+# "label" is the short tag shown on each card in the web app.
+BRANDS = [
+    {
+        "id": "shf",
+        "label": "Figuarts",
+        "query_prefix": "S.H.Figuarts",
+        "match": ["s.h.figuarts", "shfiguarts", "s.h. figuarts"],
+    },
+    {
+        "id": "medicos",
+        "label": "Medicos",
+        # Medicos's main line is "Super Action Statue"; some items are branded
+        # only as "Medicos". Searching both maximizes coverage.
+        "query_prefix": "Super Action Statue",
+        "match": ["super action statue", "medicos"],
+    },
+]
+
+# Whether to include AmiAmi's pre-owned / secondhand listings. Medicos has many
+# older figures only available used, so this is on. New items are always included.
+INCLUDE_USED = True
 
 HEADERS = {
     "X-User-Key": USER_KEY,
@@ -68,8 +93,8 @@ def api_get(path, params):
 
 def map_status(item):
     """
-    Translate AmiAmi's various availability flags into our four display states:
-    'preorder', 'upcoming', 'available', 'soldout'.
+    Translate AmiAmi's various availability flags into our display states:
+    'preorder', 'upcoming', 'available', 'soldout', 'used'.
     AmiAmi's schema is not perfectly documented and changes over time, so we
     check several fields defensively.
     """
@@ -77,8 +102,12 @@ def map_status(item):
     preorder = item.get("preorder")
     salestat = (item.get("salestatus") or "").lower()
     salestat_detail = (item.get("saletext") or "").lower()
+    cond = item.get("condition_flg")  # AmiAmi flags pre-owned items
     text = f"{salestat} {salestat_detail}"
 
+    # Pre-owned / secondhand listing
+    if cond == 1 or "pre-owned" in text or "preowned" in text or "used" in text:
+        return "used"
     # Sold out / closed
     if any(k in text for k in ["sold out", "closed", "unavailable", "end of sale"]):
         return "soldout"
@@ -95,7 +124,7 @@ def map_status(item):
     return "upcoming"
 
 
-def normalize(item, franchise):
+def normalize(item, franchise, brand):
     """Convert a raw AmiAmi item into our clean schema."""
     gcode = item.get("gcode") or ""
     thumb = item.get("thumb_url") or item.get("main_image_url") or ""
@@ -106,6 +135,8 @@ def normalize(item, franchise):
     return {
         "id": gcode,
         "franchise": franchise["id"],
+        "brand": brand["id"],
+        "brand_label": brand["label"],
         "name": (item.get("gname") or "").strip(),
         "status": map_status(item),
         "price_jpy": price,
@@ -118,35 +149,39 @@ def normalize(item, franchise):
     }
 
 
-def fetch_franchise(franchise):
-    """Fetch all S.H.Figuarts items for one franchise, paging through results."""
-    print(f"Fetching {franchise['name']} ...")
+def fetch_brand_franchise(brand, franchise):
+    """Fetch all of one brand's items for one franchise, paging through results."""
+    query = f"{brand['query_prefix']} {franchise['search']}"
+    print(f"Fetching {brand['label']} / {franchise['name']} ...")
     results = []
     page = 1
     per_page = 50
     while True:
-        data = api_get("items", {
-            "s_keywords": franchise["query"],
+        params = {
+            "s_keywords": query,
             "pagecnt": page,
             "pagemax": per_page,
             "lang": "eng",
-        })
+        }
+        # s_st_condition_flg=1 tells AmiAmi to include pre-owned listings too
+        if INCLUDE_USED:
+            params["s_st_condition_flg"] = 1
+        data = api_get("items", params)
         if not data or not data.get("RSuccess"):
             break
         items = data.get("items") or []
         if not items:
             break
         for it in items:
-            # Filter: only keep genuine S.H.Figuarts (exclude FiguartsZERO, Proplica, etc.)
             name = (it.get("gname") or "").lower()
-            if "s.h.figuarts" in name or "shfiguarts" in name or "s.h. figuarts" in name:
-                results.append(normalize(it, franchise))
+            if any(m in name for m in brand["match"]):
+                results.append(normalize(it, franchise, brand))
         total = data.get("search_result", {}).get("total_results", 0)
         if page * per_page >= total or page > 20:
             break
         page += 1
         time.sleep(1.0)  # be polite to the API
-    print(f"  -> {len(results)} S.H.Figuarts items")
+    print(f"  -> {len(results)} {brand['label']} items")
     return results
 
 
@@ -167,13 +202,19 @@ def main():
 
     all_figures = []
     any_success = False
+    seen = set()
 
     for fr in FRANCHISES:
-        items = fetch_franchise(fr)
-        if items:
-            any_success = True
-        all_figures.extend(items)
-        time.sleep(1.5)
+        for brand in BRANDS:
+            items = fetch_brand_franchise(brand, fr)
+            if items:
+                any_success = True
+            for it in items:
+                # Dedupe by gcode (an item can appear in multiple searches)
+                if it["id"] and it["id"] not in seen:
+                    seen.add(it["id"])
+                    all_figures.append(it)
+            time.sleep(1.2)
 
     # Merge manual additions/overrides (matched by id). Manual wins.
     manual = load_json(manual_path, [])
