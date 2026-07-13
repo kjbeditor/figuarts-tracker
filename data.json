@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-12T10:19:34.016736+00:00",
+  "generated": "2026-07-13T11:54:25.392252+00:00",
   "franchises": [
     {
       "id": "jojo",
@@ -28,19 +28,64 @@
   ],
   "figures": [
     {
-      "id": "FIGURE-156556-R",
-      "franchise": "bleach",
+      "id": "FIGURE-158049-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Byakuya Kuchiki \"Bleach: Thousand-Year Blood War\"",
+      "name": "S.H.Figuarts Yamato \"ONE PIECE\"",
       "status": "used",
-      "price_jpy": 8250,
-      "list_price_jpy": 8250,
-      "release_date": "2023-11-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/233/FIGURE-156556.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-156556-R",
+      "price_jpy": 9900,
+      "list_price_jpy": 9900,
+      "release_date": "2023-12-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/233/FIGURE-158049.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-158049-R",
       "source": "amiami",
-      "updated": "2026-07-12"
+      "updated": "2026-07-13"
+    },
+    {
+      "id": "FIGURE-182586-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts ONE PIECE Shanks & Monkey D. Luffy (Childhood) (Tamashii Web Shoten Exclusive)",
+      "status": "used",
+      "price_jpy": 11000,
+      "list_price_jpy": 11000,
+      "release_date": "2025-03-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/252/FIGURE-182586.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-182586-R",
+      "source": "amiami",
+      "updated": "2026-07-13"
+    },
+    {
+      "id": "FIG-IPN-1208-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H. Figuarts - ONE PIECE: Monkey D. Luffy",
+      "status": "used",
+      "price_jpy": 3630,
+      "list_price_jpy": 3630,
+      "release_date": "2010-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/102/FIG-IPN-1208.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-1208-R",
+      "source": "amiami",
+      "updated": "2026-07-13"
+    },
+    {
+      "id": "FIGURE-183243-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Tony Tony Chopper -Future Island Egghead- \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 4400,
+      "list_price_jpy": 4400,
+      "release_date": "2025-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/251/FIGURE-183243.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-183243-R",
+      "source": "amiami",
+      "updated": "2026-07-13"
     }
   ]
 }
