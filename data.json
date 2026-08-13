@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-12T09:54:15.388462+00:00",
+  "generated": "2026-08-13T09:55:14.354856+00:00",
   "franchises": [
     {
       "id": "jojo",
@@ -28,6 +28,21 @@
   ],
   "figures": [
     {
+      "id": "FIGURE-197135-R",
+      "franchise": "jojo",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Rohan Kishibe (Movie \"Thus Spoke Kishibe Rohan: At a Confessional\") (Tamashii Web Shoten Exclusive)",
+      "status": "used",
+      "price_jpy": 13200,
+      "list_price_jpy": 13200,
+      "release_date": "2026-02-28 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/262/FIGURE-197135.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-197135-R",
+      "source": "amiami",
+      "updated": "2026-08-13"
+    },
+    {
       "id": "FIGURE-178654-R",
       "franchise": "onepiece",
       "brand": "shf",
@@ -40,7 +55,7 @@
       "image": "https://img.amiami.com/images/product/main/251/FIGURE-178654.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-178654-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
       "id": "FIGURE-166841-R",
@@ -55,22 +70,22 @@
       "image": "https://img.amiami.com/images/product/main/241/FIGURE-166841.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-166841-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
-      "id": "FIGURE-151304-R",
-      "franchise": "bleach",
+      "id": "FIGURE-158049-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Ichigo Kurosaki -Bankai: Tensa Zangetsu- \"Bleach: Thousand-Year Blood War\"",
+      "name": "S.H.Figuarts Yamato \"ONE PIECE\"",
       "status": "used",
-      "price_jpy": 7150,
-      "list_price_jpy": 7150,
-      "release_date": "2023-07-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/231/FIGURE-151304.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-151304-R",
+      "price_jpy": 9900,
+      "list_price_jpy": 9900,
+      "release_date": "2023-12-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/233/FIGURE-158049.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-158049-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
       "id": "FIGURE-201271-R",
@@ -85,7 +100,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-201271.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201271-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
       "id": "FIGURE-174964-R",
@@ -100,22 +115,22 @@
       "image": "https://img.amiami.com/images/product/main/243/FIGURE-174964.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-174964-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
-      "id": "FIGURE-198640-R",
+      "id": "FIGURE-173825-R",
       "franchise": "mha",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts My Hero Academia Himiko Toga (Tamashii Web Shoten Exclusive)",
+      "name": "S.H.Figuarts Izuku Midoriya \"My Hero Academia\"",
       "status": "used",
-      "price_jpy": 11000,
-      "list_price_jpy": 11000,
-      "release_date": "2026-03-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/262/FIGURE-198640.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-198640-R",
+      "price_jpy": 7700,
+      "list_price_jpy": 7700,
+      "release_date": "2024-12-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/243/FIGURE-173825.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-173825-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
       "id": "FIGURE-177600-R",
@@ -130,7 +145,7 @@
       "image": "https://img.amiami.com/images/product/main/244/FIGURE-177600.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-177600-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
     },
     {
       "id": "FIGURE-199725-R",
@@ -145,7 +160,22 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-199725.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-199725-R",
       "source": "amiami",
-      "updated": "2026-08-12"
+      "updated": "2026-08-13"
+    },
+    {
+      "id": "FIGURE-147697-R",
+      "franchise": "csm",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Chainsaw Man",
+      "status": "used",
+      "price_jpy": 7150,
+      "list_price_jpy": 7150,
+      "release_date": "2023-04-30 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/224/FIGURE-147697.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-147697-R",
+      "source": "amiami",
+      "updated": "2026-08-13"
     }
   ]
 }
