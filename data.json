@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-19T09:25:00.148154+00:00",
+  "generated": "2026-08-20T09:25:29.085531+00:00",
   "franchises": [
     {
       "id": "jojo",
@@ -40,7 +40,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-197135.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-197135-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-166708-R",
@@ -55,7 +55,7 @@
       "image": "https://img.amiami.com/images/product/main/242/FIGURE-166708.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-166708-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-000497-R",
@@ -70,7 +70,7 @@
       "image": "https://img.amiami.com/images/product/main/132/FIGURE-000497.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-000497-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIG-IPN-2690-R",
@@ -85,7 +85,7 @@
       "image": "https://img.amiami.com/images/product/main/114/FIG-IPN-2690.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-2690-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-131710-R",
@@ -100,7 +100,7 @@
       "image": "https://img.amiami.com/images/product/main/213/FIGURE-131710.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-131710-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-127240-R",
@@ -115,7 +115,7 @@
       "image": "https://img.amiami.com/images/product/main/212/FIGURE-127240.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-127240-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-049884-R",
@@ -130,22 +130,7 @@
       "image": "https://img.amiami.com/images/product/main/192/FIGURE-049884.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-049884-R",
       "source": "amiami",
-      "updated": "2026-08-19"
-    },
-    {
-      "id": "FIG-IPN-0434-R",
-      "franchise": "jojo",
-      "brand": "medicos",
-      "brand_label": "Medicos",
-      "name": "Super Action Statue - JoJo's Bizarre Adventure Part.III #5 Hierophant Green Complete Figure",
-      "status": "used",
-      "price_jpy": 3850,
-      "list_price_jpy": 3850,
-      "release_date": "2009-05-28 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/091/FIG-IPN-0434.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-0434-R",
-      "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIG-IPN-5930-R",
@@ -160,7 +145,22 @@
       "image": "https://img.amiami.com/images/product/main/131/FIG-IPN-5930.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-5930-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
+    },
+    {
+      "id": "FIG-IPN-0434-R",
+      "franchise": "jojo",
+      "brand": "medicos",
+      "brand_label": "Medicos",
+      "name": "Super Action Statue - JoJo's Bizarre Adventure Part.III #5 Hierophant Green Complete Figure",
+      "status": "used",
+      "price_jpy": 3850,
+      "list_price_jpy": 3850,
+      "release_date": "2009-05-28 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/091/FIG-IPN-0434.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-0434-R",
+      "source": "amiami",
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-021462-R",
@@ -175,7 +175,7 @@
       "image": "https://img.amiami.com/images/product/main/163/FIGURE-021462.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-021462-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-149787-R",
@@ -190,7 +190,7 @@
       "image": "https://img.amiami.com/images/product/main/231/FIGURE-149787.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-149787-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-124915-R",
@@ -205,7 +205,7 @@
       "image": "https://img.amiami.com/images/product/main/211/FIGURE-124915.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-124915-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIG-IPN-0371-R",
@@ -220,7 +220,7 @@
       "image": "https://img.amiami.com/images/product/main/091/FIG-IPN-0371.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-0371-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIG-IPN-5417-R",
@@ -235,7 +235,7 @@
       "image": "https://img.amiami.com/images/product/main/131/FIG-IPN-5417.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-5417-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-000407-R",
@@ -250,7 +250,7 @@
       "image": "https://img.amiami.com/images/product/main/132/FIGURE-000407.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-000407-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-000777-R",
@@ -265,7 +265,67 @@
       "image": "https://img.amiami.com/images/product/main/132/FIGURE-000777.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-000777-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
+    },
+    {
+      "id": "FIGURE-158049-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Yamato \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 9900,
+      "list_price_jpy": 9900,
+      "release_date": "2023-12-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/233/FIGURE-158049.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-158049-R",
+      "source": "amiami",
+      "updated": "2026-08-20"
+    },
+    {
+      "id": "FIGURE-166841-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Monkey D. Luffy -Romance Dawn- \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 4400,
+      "list_price_jpy": 4400,
+      "release_date": "2024-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/241/FIGURE-166841.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-166841-R",
+      "source": "amiami",
+      "updated": "2026-08-20"
+    },
+    {
+      "id": "FIGURE-166843-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Nami -Romance Dawn- \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 7150,
+      "list_price_jpy": 7150,
+      "release_date": "2024-09-30 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/241/FIGURE-166843.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-166843-R",
+      "source": "amiami",
+      "updated": "2026-08-20"
+    },
+    {
+      "id": "FIG-IPN-1208-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H. Figuarts - ONE PIECE: Monkey D. Luffy",
+      "status": "used",
+      "price_jpy": 3630,
+      "list_price_jpy": 3630,
+      "release_date": "2010-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/102/FIG-IPN-1208.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-1208-R",
+      "source": "amiami",
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-151304-R",
@@ -280,7 +340,7 @@
       "image": "https://img.amiami.com/images/product/main/231/FIGURE-151304.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-151304-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-120658-R",
@@ -295,7 +355,7 @@
       "image": "https://img.amiami.com/images/product/main/204/FIGURE-120658.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-120658-R",
       "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     },
     {
       "id": "FIGURE-190046-R",
@@ -310,37 +370,7 @@
       "image": "https://img.amiami.com/images/product/main/253/FIGURE-190046.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-190046-R",
       "source": "amiami",
-      "updated": "2026-08-19"
-    },
-    {
-      "id": "FIGURE-147697-R",
-      "franchise": "csm",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Chainsaw Man",
-      "status": "used",
-      "price_jpy": 7150,
-      "list_price_jpy": 7150,
-      "release_date": "2023-04-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/224/FIGURE-147697.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-147697-R",
-      "source": "amiami",
-      "updated": "2026-08-19"
-    },
-    {
-      "id": "FIGURE-185650-R",
-      "franchise": "csm",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Chainsaw Man [BEST SELECTION] (TAMASHII NATIONS STORE Exclusive)",
-      "status": "used",
-      "price_jpy": 5500,
-      "list_price_jpy": 5500,
-      "release_date": "2024-07-12 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/252/FIGURE-185650.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-185650-R",
-      "source": "amiami",
-      "updated": "2026-08-19"
+      "updated": "2026-08-20"
     }
   ]
 }
