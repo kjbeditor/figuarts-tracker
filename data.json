@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-04T13:02:19.806464+00:00",
+  "generated": "2026-09-05T12:14:59.792651+00:00",
   "franchises": [
     {
       "id": "jojo",
@@ -28,124 +28,79 @@
   ],
   "figures": [
     {
-      "id": "FIGURE-174964-R",
-      "franchise": "mha",
+      "id": "FIGURE-196626-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Katsuki Bakugo \"My Hero Academia\"",
+      "name": "S.H.Figuarts Boa Hancock -Summit War of Marineford- \"ONE PIECE\"",
       "status": "used",
-      "price_jpy": 9350,
-      "list_price_jpy": 9350,
-      "release_date": "2025-03-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/243/FIGURE-174964.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-174964-R",
+      "price_jpy": 11000,
+      "list_price_jpy": 11000,
+      "release_date": "2026-07-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/261/FIGURE-196626.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-196626-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
-      "id": "FIGURE-173825-R",
-      "franchise": "mha",
+      "id": "FIGURE-190048-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Izuku Midoriya \"My Hero Academia\"",
+      "name": "S.H.Figuarts Sanji -Romance Dawn- \"ONE PIECE\"",
       "status": "used",
       "price_jpy": 7700,
       "list_price_jpy": 7700,
-      "release_date": "2024-12-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/243/FIGURE-173825.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-173825-R",
+      "release_date": "2026-01-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/253/FIGURE-190048.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-190048-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
-      "id": "FIGURE-198640-R",
-      "franchise": "mha",
+      "id": "FIG-IPN-1208-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts My Hero Academia Himiko Toga (Tamashii Web Shoten Exclusive)",
+      "name": "S.H. Figuarts - ONE PIECE: Monkey D. Luffy",
       "status": "used",
-      "price_jpy": 11000,
-      "list_price_jpy": 11000,
-      "release_date": "2026-03-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/262/FIGURE-198640.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-198640-R",
+      "price_jpy": 3630,
+      "list_price_jpy": 3630,
+      "release_date": "2010-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/102/FIG-IPN-1208.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-1208-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
-      "id": "FIGURE-177600-R",
-      "franchise": "mha",
+      "id": "FIGURE-151310-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Shoto Todoroki \"My Hero Academia\"",
+      "name": "S.H.Figuarts Monkey D. Luffy -Raid on Onigashima- \"ONE PIECE\"",
       "status": "used",
-      "price_jpy": 9350,
-      "list_price_jpy": 9350,
-      "release_date": "2025-06-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/244/FIGURE-177600.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-177600-R",
+      "price_jpy": 4400,
+      "list_price_jpy": 4400,
+      "release_date": "2023-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/231/FIGURE-151310.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-151310-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
-      "id": "FIGURE-201271-R",
-      "franchise": "mha",
+      "id": "FIGURE-151304-R",
+      "franchise": "bleach",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts My Hero Academia Katsuki Bakugo -The Beginning- (Tamashii Web Shoten Exclusive)",
+      "name": "S.H.Figuarts Ichigo Kurosaki -Bankai: Tensa Zangetsu- \"Bleach: Thousand-Year Blood War\"",
       "status": "used",
-      "price_jpy": 11000,
-      "list_price_jpy": 11000,
-      "release_date": "2026-05-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/262/FIGURE-201271.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201271-R",
+      "price_jpy": 7150,
+      "list_price_jpy": 7150,
+      "release_date": "2023-07-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/231/FIGURE-151304.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-151304-R",
       "source": "amiami",
-      "updated": "2026-09-04"
-    },
-    {
-      "id": "FIGURE-185493-R",
-      "franchise": "mha",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Ochaco Uraraka \"My Hero Academia\"",
-      "status": "used",
-      "price_jpy": 9900,
-      "list_price_jpy": 9900,
-      "release_date": "2025-10-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/252/FIGURE-185493.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-185493-R",
-      "source": "amiami",
-      "updated": "2026-09-04"
-    },
-    {
-      "id": "FIGURE-199725-R",
-      "franchise": "mha",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts My Hero Academia Armored All Might (Tamashii Web Shoten Exclusive)",
-      "status": "used",
-      "price_jpy": 12100,
-      "list_price_jpy": 12100,
-      "release_date": "2026-04-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/262/FIGURE-199725.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-199725-R",
-      "source": "amiami",
-      "updated": "2026-09-04"
-    },
-    {
-      "id": "FIGURE-202552-R",
-      "franchise": "mha",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts My Hero Academia Overlay Deku (Tamashii Web Shoten Exclusive)",
-      "status": "used",
-      "price_jpy": 11000,
-      "list_price_jpy": 11000,
-      "release_date": "2026-06-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/263/FIGURE-202552.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-202552-R",
-      "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
       "id": "FIGURE-147697-R",
@@ -160,7 +115,7 @@
       "image": "https://img.amiami.com/images/product/main/224/FIGURE-147697.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-147697-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
       "id": "FIGURE-185650-R",
@@ -175,7 +130,7 @@
       "image": "https://img.amiami.com/images/product/main/252/FIGURE-185650.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-185650-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
       "id": "FIGURE-148830-R",
@@ -190,7 +145,7 @@
       "image": "https://img.amiami.com/images/product/main/224/FIGURE-148830.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-148830-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
       "id": "FIGURE-160335-R",
@@ -205,7 +160,7 @@
       "image": "https://img.amiami.com/images/product/main/234/FIGURE-160335.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-160335-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     },
     {
       "id": "FIGURE-201276-R",
@@ -220,7 +175,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-201276.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201276-R",
       "source": "amiami",
-      "updated": "2026-09-04"
+      "updated": "2026-09-05"
     }
   ]
 }
