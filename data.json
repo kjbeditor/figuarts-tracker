@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-20T13:22:11.524847+00:00",
+  "generated": "2026-09-21T15:31:05.043167+00:00",
   "franchises": [
     {
       "id": "jojo",
@@ -40,7 +40,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-032211.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-032211-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-049884-R",
@@ -55,22 +55,7 @@
       "image": "https://img.amiami.com/images/product/main/192/FIGURE-049884.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-049884-R",
       "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-201442-R",
-      "franchise": "jojo",
-      "brand": "medicos",
-      "brand_label": "Medicos",
-      "name": "[Bonus] JoJo's Bizarre Adventure Part.VII Steel Ball Run Super Action Statue Gyro Zeppeli Ver1.5 & Chozo Art Collection Valkyrie (MEDICOS ONLINE SHOP Exclusive)",
-      "status": "used",
-      "price_jpy": 30360,
-      "list_price_jpy": 30360,
-      "release_date": "2021-06-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/262/FIGURE-201442.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201442-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-027796-R",
@@ -85,37 +70,22 @@
       "image": "https://img.amiami.com/images/product/main/174/FIGURE-027796.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-027796-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
-      "id": "FIGURE-060622-R",
+      "id": "FIGURE-201442-R",
       "franchise": "jojo",
       "brand": "medicos",
       "brand_label": "Medicos",
-      "name": "Super Action Statue JoJo's Bizarre Adventure Part.VII Steel Ball Run Diego Brando",
+      "name": "[Bonus] JoJo's Bizarre Adventure Part.VII Steel Ball Run Super Action Statue Gyro Zeppeli Ver1.5 & Chozo Art Collection Valkyrie (MEDICOS ONLINE SHOP Exclusive)",
       "status": "used",
-      "price_jpy": 8580,
-      "list_price_jpy": 8580,
-      "release_date": "2020-12-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/203/FIGURE-060622.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-060622-R",
+      "price_jpy": 30360,
+      "list_price_jpy": 30360,
+      "release_date": "2021-06-30 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/262/FIGURE-201442.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201442-R",
       "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-124915-R",
-      "franchise": "jojo",
-      "brand": "medicos",
-      "brand_label": "Medicos",
-      "name": "Super Action Statue JoJo's Bizarre Adventure Part 2 Joseph Joestar",
-      "status": "used",
-      "price_jpy": 8030,
-      "list_price_jpy": 8030,
-      "release_date": "2021-08-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/211/FIGURE-124915.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-124915-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-005679-R",
@@ -130,7 +100,22 @@
       "image": "https://img.amiami.com/images/product/main/142/FIGURE-005679.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-005679-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-124915-R",
+      "franchise": "jojo",
+      "brand": "medicos",
+      "brand_label": "Medicos",
+      "name": "Super Action Statue JoJo's Bizarre Adventure Part 2 Joseph Joestar",
+      "status": "used",
+      "price_jpy": 8030,
+      "list_price_jpy": 8030,
+      "release_date": "2021-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/211/FIGURE-124915.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-124915-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-050959-R",
@@ -145,7 +130,7 @@
       "image": "https://img.amiami.com/images/product/main/194/FIGURE-050959.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-050959-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-010279-R",
@@ -160,7 +145,7 @@
       "image": "https://img.amiami.com/images/product/main/151/FIGURE-010279.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-010279-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIG-IPN-6480-R",
@@ -175,7 +160,7 @@
       "image": "https://img.amiami.com/images/product/main/132/FIG-IPN-6480.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-6480-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-134413-R",
@@ -190,22 +175,7 @@
       "image": "https://img.amiami.com/images/product/main/214/FIGURE-134413.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-134413-R",
       "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-000407-R",
-      "franchise": "jojo",
-      "brand": "medicos",
-      "brand_label": "Medicos",
-      "name": "Super Action Statue - JoJo's Bizarre Adventure Part.III #4 J. P. Polnareff Complete Figure (Hirohiko Araki Specified Color)",
-      "status": "used",
-      "price_jpy": 4620,
-      "list_price_jpy": 4620,
-      "release_date": "2013-10-28 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/132/FIGURE-000407.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-000407-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-008917-R",
@@ -220,52 +190,22 @@
       "image": "https://img.amiami.com/images/product/main/144/FIGURE-008917.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-008917-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
-      "id": "FIGURE-143423-R",
+      "id": "FIGURE-000407-R",
       "franchise": "jojo",
       "brand": "medicos",
       "brand_label": "Medicos",
-      "name": "Super Action Statue BIG JoJo's Bizarre Adventure Part III The World",
+      "name": "Super Action Statue - JoJo's Bizarre Adventure Part.III #4 J. P. Polnareff Complete Figure (Hirohiko Araki Specified Color)",
       "status": "used",
-      "price_jpy": 21780,
-      "list_price_jpy": 21780,
-      "release_date": "2023-01-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/223/FIGURE-143423.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-143423-R",
+      "price_jpy": 4620,
+      "list_price_jpy": 4620,
+      "release_date": "2013-10-28 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/132/FIGURE-000407.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-000407-R",
       "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-148631-R",
-      "franchise": "jojo",
-      "brand": "medicos",
-      "brand_label": "Medicos",
-      "name": "Super Action Statue JoJo's Bizarre Adventure Part.III Jotaro Kujo Ver.1.5",
-      "status": "used",
-      "price_jpy": 8030,
-      "list_price_jpy": 8030,
-      "release_date": "2023-08-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/224/FIGURE-148631.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-148631-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-122264-R",
-      "franchise": "jojo",
-      "brand": "medicos",
-      "brand_label": "Medicos",
-      "name": "Super Action Statue JoJo's Bizarre Adventure Part.I Dio Brando",
-      "status": "used",
-      "price_jpy": 8030,
-      "list_price_jpy": 8030,
-      "release_date": "2021-08-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/204/FIGURE-122264.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-122264-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-000777-R",
@@ -280,7 +220,37 @@
       "image": "https://img.amiami.com/images/product/main/132/FIGURE-000777.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-000777-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-143423-R",
+      "franchise": "jojo",
+      "brand": "medicos",
+      "brand_label": "Medicos",
+      "name": "Super Action Statue BIG JoJo's Bizarre Adventure Part III The World",
+      "status": "used",
+      "price_jpy": 21780,
+      "list_price_jpy": 21780,
+      "release_date": "2023-01-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/223/FIGURE-143423.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-143423-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-122264-R",
+      "franchise": "jojo",
+      "brand": "medicos",
+      "brand_label": "Medicos",
+      "name": "Super Action Statue JoJo's Bizarre Adventure Part.I Dio Brando",
+      "status": "used",
+      "price_jpy": 8030,
+      "list_price_jpy": 8030,
+      "release_date": "2021-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/204/FIGURE-122264.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-122264-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
     },
     {
       "id": "FIG-IPN-04445-R",
@@ -295,7 +265,22 @@
       "image": "https://img.amiami.com/images/product/main/123/FIG-IPN-04445.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-04445-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-148631-R",
+      "franchise": "jojo",
+      "brand": "medicos",
+      "brand_label": "Medicos",
+      "name": "Super Action Statue JoJo's Bizarre Adventure Part.III Jotaro Kujo Ver.1.5",
+      "status": "used",
+      "price_jpy": 8030,
+      "list_price_jpy": 8030,
+      "release_date": "2023-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/224/FIGURE-148631.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-148631-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
     },
     {
       "id": "FIG-IPN-04830-R",
@@ -310,7 +295,7 @@
       "image": "https://img.amiami.com/images/product/main/123/FIG-IPN-04830.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-04830-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-122265-R",
@@ -325,7 +310,7 @@
       "image": "https://img.amiami.com/images/product/main/204/FIGURE-122265.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-122265-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIG-IPN-1340-R",
@@ -340,7 +325,7 @@
       "image": "https://img.amiami.com/images/product/main/103/FIG-IPN-1340.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-1340-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-054374-R",
@@ -355,37 +340,142 @@
       "image": "https://img.amiami.com/images/product/main/194/FIGURE-054374.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-054374-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
-      "id": "FIGURE-175551-R",
-      "franchise": "bleach",
+      "id": "FIGURE-196626-R",
+      "franchise": "onepiece",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Bleach: Thousand-Year Blood War Ichigo Kurosaki -Zangetsu Tachi- (Tamashii Web Shoten Exclusive)",
+      "name": "S.H.Figuarts Boa Hancock -Summit War of Marineford- \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 11000,
+      "list_price_jpy": 11000,
+      "release_date": "2026-07-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/261/FIGURE-196626.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-196626-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-166841-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Monkey D. Luffy -Romance Dawn- \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 4400,
+      "list_price_jpy": 4400,
+      "release_date": "2024-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/241/FIGURE-166841.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-166841-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-178519-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Monkey D. Luffy -Future Island Egghead- \"ONE PIECE\"",
+      "status": "used",
+      "price_jpy": 4400,
+      "list_price_jpy": 4400,
+      "release_date": "2025-05-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/244/FIGURE-178519.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-178519-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIG-IPN-1208-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H. Figuarts - ONE PIECE: Monkey D. Luffy",
+      "status": "used",
+      "price_jpy": 3630,
+      "list_price_jpy": 3630,
+      "release_date": "2010-08-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/102/FIG-IPN-1208.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIG-IPN-1208-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-178654-R",
+      "franchise": "onepiece",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "World Collectable Figure x S.H.Figuarts ONE PIECE Monkey D. Luffy (Tamashii Web Shoten Ver.)",
+      "status": "used",
+      "price_jpy": 3300,
+      "list_price_jpy": 3300,
+      "release_date": "2024-12-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/251/FIGURE-178654.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-178654-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-193937-R",
+      "franchise": "jjk",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Yuta Okkotsu -Special Grade Jujutsu Sorcerer- \"Jujutsu Kaisen\"",
       "status": "used",
       "price_jpy": 9900,
       "list_price_jpy": 9900,
-      "release_date": "2024-10-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/251/FIGURE-175551.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-175551-R",
+      "release_date": "2026-05-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/254/FIGURE-193937.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-193937-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
-      "id": "FIGURE-151306-R",
-      "franchise": "bleach",
+      "id": "FIGURE-193935-R",
+      "franchise": "jjk",
       "brand": "shf",
       "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Renji Abarai \"Bleach: Thousand-Year Blood War\"",
+      "name": "S.H.Figuarts Yuji Itadori -Sukuna's Vessel- \"Jujutsu Kaisen\"",
       "status": "used",
       "price_jpy": 8250,
       "list_price_jpy": 8250,
-      "release_date": "2023-08-31 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/231/FIGURE-151306.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-151306-R",
+      "release_date": "2026-03-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/254/FIGURE-193935.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-193935-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-158043-R",
+      "franchise": "jjk",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Satoru Gojo -Curse Technical School- \"Jujutsu Kaisen\"",
+      "status": "used",
+      "price_jpy": 9350,
+      "list_price_jpy": 9350,
+      "release_date": "2024-01-31 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/233/FIGURE-158043.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-158043-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-158045-R",
+      "franchise": "jjk",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Suguru Geto -Curse Technical School- \"Jujutsu Kaisen\"",
+      "status": "used",
+      "price_jpy": 9350,
+      "list_price_jpy": 9350,
+      "release_date": "2024-02-29 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/233/FIGURE-158045.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-158045-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-173825-R",
@@ -400,7 +490,7 @@
       "image": "https://img.amiami.com/images/product/main/243/FIGURE-173825.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-173825-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-174964-R",
@@ -415,22 +505,7 @@
       "image": "https://img.amiami.com/images/product/main/243/FIGURE-174964.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-174964-R",
       "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-177600-R",
-      "franchise": "mha",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Shoto Todoroki \"My Hero Academia\"",
-      "status": "used",
-      "price_jpy": 9350,
-      "list_price_jpy": 9350,
-      "release_date": "2025-06-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/244/FIGURE-177600.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-177600-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-201271-R",
@@ -445,7 +520,22 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-201271.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201271-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
+    },
+    {
+      "id": "FIGURE-177600-R",
+      "franchise": "mha",
+      "brand": "shf",
+      "brand_label": "Figuarts",
+      "name": "S.H.Figuarts Shoto Todoroki \"My Hero Academia\"",
+      "status": "used",
+      "price_jpy": 9350,
+      "list_price_jpy": 9350,
+      "release_date": "2025-06-30 00:00:00",
+      "image": "https://img.amiami.com/images/product/main/244/FIGURE-177600.jpg",
+      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-177600-R",
+      "source": "amiami",
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-199725-R",
@@ -460,7 +550,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-199725.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-199725-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-202552-R",
@@ -475,7 +565,7 @@
       "image": "https://img.amiami.com/images/product/main/263/FIGURE-202552.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-202552-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-174966-R",
@@ -490,7 +580,7 @@
       "image": "https://img.amiami.com/images/product/main/243/FIGURE-174966.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-174966-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-192995-R",
@@ -505,7 +595,7 @@
       "image": "https://img.amiami.com/images/product/main/254/FIGURE-192995.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-192995-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-147697-R",
@@ -520,7 +610,7 @@
       "image": "https://img.amiami.com/images/product/main/224/FIGURE-147697.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-147697-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-201276-R",
@@ -535,22 +625,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-201276.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-201276-R",
       "source": "amiami",
-      "updated": "2026-09-20"
-    },
-    {
-      "id": "FIGURE-148830-R",
-      "franchise": "csm",
-      "brand": "shf",
-      "brand_label": "Figuarts",
-      "name": "S.H.Figuarts Power \"Chainsaw Man\"",
-      "status": "used",
-      "price_jpy": 7700,
-      "list_price_jpy": 7700,
-      "release_date": "2023-06-30 00:00:00",
-      "image": "https://img.amiami.com/images/product/main/224/FIGURE-148830.jpg",
-      "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-148830-R",
-      "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-199727-R",
@@ -565,7 +640,7 @@
       "image": "https://img.amiami.com/images/product/main/262/FIGURE-199727.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-199727-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     },
     {
       "id": "FIGURE-160335-R",
@@ -580,7 +655,7 @@
       "image": "https://img.amiami.com/images/product/main/234/FIGURE-160335.jpg",
       "url": "https://www.amiami.com/eng/detail/?gcode=FIGURE-160335-R",
       "source": "amiami",
-      "updated": "2026-09-20"
+      "updated": "2026-09-21"
     }
   ]
 }
